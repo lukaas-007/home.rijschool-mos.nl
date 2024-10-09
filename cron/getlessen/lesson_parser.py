@@ -26,10 +26,10 @@ def parse_lessons(response_data):
 def save_lessons_to_database(lessons):
     """Saves the lesson data to the clarien table."""
     mydb = mysql.connector.connect(
-    host="phpmyadmin.lucasvanbriemen.nl",
-    user="LucasDatabase",
-    password="LucasDatabase",
-    database="rijles"
+        host="server.lucasvanbriemen.nl",
+        user="LucasDatabase",
+        password="LucasDatabase",
+        database="rijles"
     )
 
     mycursor = mydb.cursor()
