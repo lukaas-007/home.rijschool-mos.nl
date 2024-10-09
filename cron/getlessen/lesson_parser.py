@@ -35,7 +35,11 @@ def save_lessons_to_database(lessons):
     mycursor = mydb.cursor()
     
     for lesson in lessons:
-        sql = "INSERT INTO clarien (start, end, id, primary_color, students_with_absence, typeName, note) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        sql = "DELETE FROM clarien WHERE id = %s"
+        val = (lesson['id'])
+        mycursor.execute(sql, val)
+        
+        sql = "INSERT INTO clarien (start, end, id, primary_color, name, type, note) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         val = (lesson['start'], lesson['end'], lesson['id'], lesson['primary_color'], lesson['students_with_absence'], lesson['typeName'], lesson['note'])
         mycursor.execute(sql, val)
 

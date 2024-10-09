@@ -41,7 +41,7 @@ try:
     next_two_weeks_lessons = parse_lessons(next_two_weeks_data)
 
     # Combine all lessons
-    all_new_lessons = current_week_lessons + next_week_lessons + next_two_weeks_lessons
+    all_new_lessons = current_week_lessons #+ next_week_lessons + next_two_weeks_lessons
 
     # Save updated lessons to the database
     save_lessons_to_database(all_new_lessons)
