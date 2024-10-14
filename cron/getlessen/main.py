@@ -1,7 +1,6 @@
 import json
 from seleniumwire import webdriver
 from selenium.webdriver.chrome.options import Options
-import mysql.connector
 
 from login import login_to_autofox
 from request_interceptor import intercept_last_request
