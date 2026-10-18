@@ -1,0 +1,25 @@
+:root {
+    --background-color: #f0f0f0;
+    --input-background: #FFFFFF;
+    --one-deep-background: #FFFFFF;
+
+    --text: #000000;
+
+    --call-to-action: #0F9D58;
+    --call-to-action-hover: #0d834a;
+
+    --pure-color: #ffffff;
+
+    --darkmode: #191919;
+    --lightmode: #f0f0f0;
+
+    --box-shadow-color: #000000;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+    transition: all 0.2s ease-in-out;
+
+    overflow: none;
+}
