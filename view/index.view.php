@@ -176,6 +176,14 @@
 
     <footer class="footer">
         <div>&copy; <?= date('Y') ?> Rijschool Mos</div>
+        <div class="footer-credit">
+            Made by
+            <?php if ($madeBy['url']) { ?>
+                <a href="<?= $madeBy['url'] ?>" target="_blank" rel="noopener"><?= $madeBy['name'] ?></a>
+            <?php } else { ?>
+                <?= $madeBy['name'] ?>
+            <?php } ?>
+        </div>
         <div class="footer-links">
             <a href="<?= $contact['instagram'] ?>" target="_blank" rel="noopener">Instagram</a>
             <a href="https://login.rijschool-mos.nl">Inloggen leerlingen</a>

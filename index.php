@@ -11,6 +11,11 @@ $contact = [
 
 $instructorName = 'Alvindo';
 
+$madeBy = [
+    'name' => 'Lucas van Briemen',
+    'url' => 'https://ltvb.nl',
+];
+
 $packages = [
     [
         'name' => 'Proefles',
